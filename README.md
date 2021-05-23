@@ -3,7 +3,7 @@ About manimpango
 
 Home: https://manimpango.manim.community/
 
-Package license: GPL-3.0
+Package license: GPL-3.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/manimpango-feedstock/blob/master/LICENSE.txt)
 

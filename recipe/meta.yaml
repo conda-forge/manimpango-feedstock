@@ -26,11 +26,13 @@ requirements:
     - cairo
     - glib
     - pkg-config
+    - fontconfig  # [win]
   run:
     - python
     - pango
     - cairo
     - glib
+    - fontconfig  # [win]
 
 test:
   imports:

@@ -6,6 +6,8 @@ channel_sources:
 - conda-forge,defaults
 channel_targets:
 - conda-forge main
+fontconfig:
+- '2.13'
 glib:
 - '2'
 pango:
@@ -13,6 +15,8 @@ pango:
 pin_run_as_build:
   cairo:
     max_pin: x.x
+  fontconfig:
+    max_pin: x
   pango:
     max_pin: x.x
   python:

@@ -14,12 +14,8 @@ glib:
 - '2'
 macos_machine:
 - x86_64-apple-darwin13.4.0
-pango:
-- '1.42'
 pin_run_as_build:
   cairo:
-    max_pin: x.x
-  pango:
     max_pin: x.x
   python:
     min_pin: x.x

@@ -22,14 +22,14 @@ requirements:
     - python
     - cython >=0.27
     - pip
-    - pango
+    - pango >=1.48.10
     - cairo
     - glib
     - pkg-config
     - fontconfig  # [win]
   run:
     - python
-    - pango
+    - pango >=1.48.10
     - cairo
     - glib
     - fontconfig  # [win]

@@ -22,6 +22,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
     - cython                                 # [build_platform != target_platform]
     - glib                                   # [build_platform != target_platform]
+    - pkg-config
   host:
     - python
     - cython >=0.27
@@ -29,7 +30,6 @@ requirements:
     - pango
     - cairo
     - glib
-    - pkg-config
   run:
     - python
     - pango

@@ -1,7 +1,7 @@
 c_compiler:
 - vs2019
 cairo:
-- '1.16'
+- '1'
 channel_sources:
 - conda-forge
 channel_targets:
@@ -11,14 +11,10 @@ glib:
 pango:
 - '1.50'
 pin_run_as_build:
-  cairo:
-    max_pin: x.x
-  pango:
-    max_pin: x.x
   python:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.7.* *_cpython
+- 3.11.* *_cpython
 target_platform:
 - win-64

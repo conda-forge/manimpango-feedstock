@@ -1,5 +1,5 @@
 {% set name = "manimpango" %}
-{% set version = "0.4.1" %}
+{% set version = "0.4.2" %}
 
 
 package:
@@ -8,10 +8,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ManimPango-{{ version }}.tar.gz
-  sha256: f2da037ccdfe174040d3315001cc59bfc7405cd1b1191078bd4db0938005d649
+  sha256: 7ce708b33f21682af90a2872852c06bb589a24bbb9ff723159245c7539acdaaa
 
 build:
-  number: 7
+  number: 0
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
 

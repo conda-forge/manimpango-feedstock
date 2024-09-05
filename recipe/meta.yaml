@@ -11,7 +11,7 @@ source:
   sha256: 299913bbccb0f15954b64401cf9df24607e1a01edda589ea77de1ed4cc2bc284
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<36]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -22,8 +22,10 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - pkg-config                             # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
+    - setuptools
     - cython >=0.27
     - pip
     - pango

@@ -25,6 +25,7 @@ requirements:
     - {{ stdlib("c") }}
   host:
     - python
+    - setuptools
     - cython >=0.27
     - pip
     - pango

@@ -1,5 +1,5 @@
 {% set name = "manimpango" %}
-{% set version = "0.5.0" %}
+{% set version = "0.6.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/ManimPango-{{ version }}.tar.gz
-  sha256: 299913bbccb0f15954b64401cf9df24607e1a01edda589ea77de1ed4cc2bc284
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: d959708e5c05e87317b37df5f6c5258aa9d1ed694a0b25b19d6a4f861841e191
 
 build:
   number: 0
@@ -22,6 +22,7 @@ requirements:
     - cython                                 # [build_platform != target_platform]
     - pkg-config                             # [build_platform != target_platform]
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
   host:
     - python
     - cython >=0.27

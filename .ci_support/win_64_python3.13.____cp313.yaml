@@ -1,5 +1,5 @@
 c_compiler:
-- vs2019
+- vs2022
 c_stdlib:
 - vs
 cairo:
@@ -8,6 +8,12 @@ channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
+expat:
+- '2'
+fontconfig:
+- '2'
+freetype:
+- '2'
 glib:
 - '2'
 pango:
@@ -17,6 +23,8 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.9.* *_cpython
+- 3.13.* *_cp313
 target_platform:
 - win-64
+zlib:
+- '1'

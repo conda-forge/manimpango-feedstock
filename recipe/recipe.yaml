@@ -1,5 +1,5 @@
 context:
-  version: "0.7.0"
+  version: "0.7.1"
 
 package:
   name: manimpango
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/m/manimpango/manimpango-${{ version }}.tar.gz
-  sha256: 64330c360f5040ed356b9eb289d52e8ae8cbc3d9c39297c5e77522e1b417f1c7
+  sha256: 4b2ef45b37a091ebc6775bcc660a91221f4cbd2c5361c5e872ddeb213a5c88bb
 
 build:
   number: 0

@@ -10,7 +10,7 @@ source:
   sha256: 4b2ef45b37a091ebc6775bcc660a91221f4cbd2c5361c5e872ddeb213a5c88bb
 
 build:
-  number: 0
+  number: 1
   script: ${{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
         - cython >=3.0.2,<3.1
     - ${{ compiler('c') }}
     - ${{ stdlib("c") }}
-    - pkg-config
+    - pkgconf
   host:
     - python
     - setuptools
